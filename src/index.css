@@ -1,9 +1,6 @@
 @import "tailwindcss";
 
-.title {
-  font-family: "PT Sans", sans-serif;
-}
-
 body {
+  font-family: "PT Sans", sans-serif;
   background-color: #e4efe7;
 }
