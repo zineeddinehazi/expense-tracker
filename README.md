@@ -1,12 +1,32 @@
-# React + Vite
+# React Expense Tracking App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a simple front-end money tracker application built with React. It demonstrates basic React concepts like components, props, state, and routing. The app allows the user to add transactions using a beautiful form.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Homepage with a form and stats pannel
+- Clean and minimal layout
+- Built using functional components and React Hooks
 
-## Expanding the ESLint configuration
+## Technologies Used
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React
+- NodeJS
+- CSS/Tailwind
+- git
+
+## Getting Started
+
+### Prerequisites
+
+Before running this project, make sure you have the following installed:
+
+- [Node.js](https://nodejs.org/)
+- npm (comes with Node.js)
+
+### Installation
+
+1. Clone the repository:
+- git clone https://github.com/zineeddinehazi/expense-tracker.git
+2. Install dependencies:
+- cd expense-tracker && npm install
