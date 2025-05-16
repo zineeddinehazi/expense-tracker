@@ -13,7 +13,7 @@ export default function App() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (!name || !amount || !type || !+amount) return;
+    if (!name || !+amount) return;
     const id = crypto.randomUUID();
     const newItem = {
       name: name,
