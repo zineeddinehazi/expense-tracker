@@ -13,7 +13,7 @@ This is a simple front-end money tracker application built with React. It demons
 - React
 - NodeJS
 - CSS/Tailwind
-- git
+- vite
 
 ## Getting Started
 
