@@ -40,6 +40,7 @@ Make sure you have the following installed:
    cd expense-tracker
    ```
 2. Install dependencies:
+   
    ```bach
    npm install
    ```
