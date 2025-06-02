@@ -27,6 +27,11 @@ Before running this project, make sure you have the following installed:
 ### Installation
 
 1. Clone the repository:
-- git clone https://github.com/zineeddinehazi/expense-tracker.git
+   ```bach
+   git clone https://github.com/zineeddinehazi/expense-tracker.git
+   cd expense-tracker
+   ```
 2. Install dependencies:
-- cd expense-tracker && npm install
+   ```bach
+   npm install
+   ```
