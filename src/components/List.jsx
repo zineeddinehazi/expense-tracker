@@ -1,6 +1,6 @@
 import Item from "./Item";
 
-export default function List({ items, setItems, currency }) {
+export default function List({ items, setItems }) {
   const handleRemove = (ID) => {
     setItems((items) => items.filter((item) => item.id !== ID));
   };
@@ -9,12 +9,7 @@ export default function List({ items, setItems, currency }) {
       className={`${items.length > 6 ? "grid grid-cols-2" : "flex flex-col"} gap-6`}
     >
       {items.map((item) => (
-        <Item
-          item={item}
-          key={item.id}
-          handleRemove={handleRemove}
-          currency={currency}
-        />
+        <Item item={item} key={item.id} handleRemove={handleRemove} />
       ))}
     </div>
   );

@@ -1,14 +1,25 @@
-export default function Form({
-  name,
-  setName,
-  amount,
-  setAmount,
-  type,
-  setType,
-  handleSubmit,
-  currency,
-  setCurrency,
-}) {
+import { useState } from "react";
+
+export default function Form({ setItems }) {
+  const [name, setName] = useState("");
+  const [amount, setAmount] = useState("");
+  const [type, setType] = useState("Expense");
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (!name || !+amount) return;
+    const id = crypto.randomUUID();
+    const newItem = {
+      name: name,
+      amount: type === "Income" ? amount : `-${amount}`,
+      type: type,
+      id: id,
+    };
+    setItems((items) => [...items, newItem]);
+    setName("");
+    setAmount("");
+    setType("Expense");
+  };
   return (
     <div className="flex justify-center">
       <form
@@ -45,18 +56,6 @@ export default function Form({
           >
             <option value={"Income"}>Income</option>
             <option value={"Expense"}>Expense</option>
-          </select>
-          <select
-            value={currency}
-            onChange={(e) => setCurrency(e.target.value)}
-            className="rounded-xl bg-[#E8F9FF] p-2 text-xl font-semibold shadow"
-          >
-            <option value={"$"}>$</option>
-            <option value={"€"}>€</option>
-            <option value={"£"}>£</option>
-            <option value={"¥"}>¥</option>
-            <option value={"DA"}>DA</option>
-            <option value={"¥"}>¥</option>
           </select>
         </div>
         <button

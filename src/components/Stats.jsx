@@ -1,4 +1,4 @@
-export default function Stats({ items, currency }) {
+export default function Stats({ items }) {
   let accT = 0;
   items.forEach((element) => {
     accT = accT + +element.amount;
@@ -13,24 +13,13 @@ export default function Stats({ items, currency }) {
   return (
     <div className="mb-10 flex flex-col items-center text-3xl">
       <h1>Your balance</h1>
-      <h1 className="font-bold">
-        {accT}
-        {currency}
-      </h1>
+      <h1 className="font-bold">{accT}$</h1>
       <div className="mt-10 flex gap-12 bg-[#E8F9FF] p-6 shadow-lg">
         <h1 className="text-center">
-          Income{" "}
-          <h1 className="text-green-600">
-            {accIn}
-            {currency}
-          </h1>
+          Income <h1 className="text-green-600">{accIn}$</h1>
         </h1>
         <h1 className="text-center">
-          Expense{" "}
-          <h1 className="text-red-700">
-            {-accEx}
-            {currency}
-          </h1>
+          Expense <h1 className="text-red-700">{-accEx}$</h1>
         </h1>
       </div>
     </div>

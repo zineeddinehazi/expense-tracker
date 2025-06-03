@@ -1,4 +1,4 @@
-export default function Item({ item, handleRemove, currency }) {
+export default function Item({ item, handleRemove }) {
   return (
     <div className="flex justify-between rounded-xl bg-[#E8F9FF] p-4 shadow-lg">
       <div className="flex flex-col text-2xl">
@@ -6,8 +6,7 @@ export default function Item({ item, handleRemove, currency }) {
         <h1
           className={`font-bold ${item.type === "Income" ? "text-green-600" : "text-red-700"}`}
         >
-          {item.amount}
-          {currency}
+          {item.amount}$
         </h1>
       </div>
       <button
