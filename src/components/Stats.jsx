@@ -12,7 +12,7 @@ export default function Stats({ items }) {
   });
   return (
     <div className="mb-10 flex flex-col items-center text-3xl">
-      <h1>Your balance</h1>
+      <h1 className="font-bold">Your balance</h1>
       <h1 className="font-bold">{accT}$</h1>
       <div className="mt-10 flex gap-12 bg-[#E8F9FF] p-6 shadow-lg">
         <h1 className="text-center">

@@ -48,7 +48,7 @@ export default function Form({ setItems }) {
             type="text"
           />
         </div>
-        <div className="flex gap-4 pt-3">
+        <div className="flex justify-between gap-4 pt-3">
           <select
             value={type}
             onChange={(e) => setType(e.target.value)}
@@ -57,13 +57,13 @@ export default function Form({ setItems }) {
             <option value={"Income"}>Income</option>
             <option value={"Expense"}>Expense</option>
           </select>
+          <button
+            type="submit"
+            className="m-1 flex-1 rounded-lg bg-[#1B56FD] p-2 text-xl text-[#EEF7FF] hover:bg-[#3D90D7]"
+          >
+            Add item
+          </button>
         </div>
-        <button
-          type="submit"
-          className="m-1 rounded-lg bg-[#1B56FD] p-2 text-xl text-[#EEF7FF] hover:bg-[#3D90D7]"
-        >
-          Add item
-        </button>
       </form>
     </div>
   );

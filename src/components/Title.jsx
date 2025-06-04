@@ -1,7 +1,10 @@
 export default function Title() {
   return (
-    <div className="mt-12 mb-16 flex justify-center text-5xl font-bold">
-      <h1>Expense Tracker</h1>
+    <div className="my-10 flex gap-5">
+      <h1 className="p-4 text-center text-5xl font-bold text-green-600">
+        Expense Tracker
+      </h1>
+      <img src="src/assets/money.png" className="h-20 w-20"></img>
     </div>
   );
 }
