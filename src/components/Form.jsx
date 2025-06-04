@@ -7,7 +7,7 @@ export default function Form({ setItems }) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (!name || !+amount) return;
+    if (!name || !+amount || +name) return;
     const id = crypto.randomUUID();
     const newItem = {
       name: name,
