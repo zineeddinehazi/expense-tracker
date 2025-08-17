@@ -11,9 +11,12 @@ export default function Stats({ items }) {
       : (accIn = accIn + +element.amount);
   });
   return (
-    <div className="mb-10 flex flex-col items-center text-3xl">
-      <h1 className="font-bold">Your balance</h1>
-      <h1 className="font-bold">{accT}$</h1>
+    <div className="mb-6 flex items-center gap-8 text-3xl">
+      <div className="mt-10 flex flex-col items-center justify-center">
+        <h1 className="font-bold">Your balance</h1>
+        <h1 className="font-bold">{accT}$</h1>
+      </div>
+
       <div className="mt-10 flex gap-12 bg-[#E8F9FF] p-6 shadow-lg">
         <h1 className="text-center">
           Income <h1 className="text-green-600">{accIn}$</h1>

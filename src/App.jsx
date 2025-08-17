@@ -21,7 +21,7 @@ export default function App() {
       <Stats items={items} />
       <Form setItems={setItems} />
       <button
-        className="absolute bottom-7 mt-8 rounded-lg border-2 p-3 text-center text-xl font-bold hover:bg-gray-300"
+        className="mt-4 mb-6 rounded-lg border-2 p-3 text-center text-xl font-bold hover:bg-gray-300"
         onClick={() => setShowList((showList) => !showList)}
       >
         Show transaction list
